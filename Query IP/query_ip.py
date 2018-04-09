@@ -34,10 +34,8 @@ if __name__ == "__main__":
     cmdargs = parse_arguments()
     
     try:        
-        local_ip = get_local_ip()
-        public_ip = get_public_ip()
-        
-        msg = 'Local IP ' + local_ip + ', Public IP ' + public_ip
+	
+        msg = 'Local IP ' + get_local_ip() + ', Public IP ' + get_public_ip()
         global_logger.log(msg)
 
         if cmdargs.email:
